@@ -1,0 +1,333 @@
+/* Reset default styles and set basic typography */
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(28, 26, 26); /* Fallback color */
+    background: linear-gradient(90deg, rgba(28, 26, 26, 1) 0%, rgba(48, 5, 37, 1) 100%);
+    /* Gradient background */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Navigation styling */
+nav {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center; /* Align center */
+    position: fixed; /* Stick to the top of the screen */
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    background-color: #000; /* Black background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    top: 0; /* Stick to the top of the page */
+}
+
+.top-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-container {
+    margin-bottom: 0; /* Ensure no bottom margin for the creators section */
+}
+
+/* Navigation link styling */
+.nav-links a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.nav-links a:hover {
+    background-color: #5B3A83; /* Darker purple on hover */
+}
+
+/* Styling for sections */
+.section {
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 20px auto; /* Adjusted margin to center and fit the screen */
+    max-width: 800px; /* Limit section width */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+/* Heading styles */
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #fff; /* White text color */
+}
+
+/* Paragraph styles */
+.section p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Styling for cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px; /* Adjusted card width */
+    height: 300px; /* Adjusted card height */
+    padding: 20px;
+    margin: 20px;
+    background-color: transparent; /* Set background to transparent */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    perspective: 1000px; /* Add 3D perspective */
+}
+
+
+/* Image styles for the cards */
+.card img {
+    width: 250px; /* Adjusted width for Meet the Creators images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the container */
+    background-color: transparent; /* Set image background to transparent */
+    border: none; /* Remove the border outline */
+}
+
+/* Flip animation for the cards */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Flip on hover */
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide the backface of elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.card-front img {
+    width: 250px; /* Adjusted width for Meet the Creators images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensure the image covers the container */
+    background-color: transparent; /* Set image background to transparent */
+    border: none; /* Remove the border outline */
+}
+
+.card-back {
+    background-color: transparent; /* Transparent background */
+    transform: rotateY(180deg); /* Initially hidden */
+    padding: 20px;
+    flex-direction: column; /* Arrange content in a column */
+    color: #fff; /* Set font color to white */
+}
+
+
+/* Heading styles within cards */
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #fff; /* Set font color to white */
+}
+
+/* Paragraph styles within cards */
+.card p {
+    margin-bottom: 0;
+    color: #fff; /* Set font color to white */
+}
+
+footer {
+    padding: 3px 20px; /* Adjust padding */
+    display: flex;
+    justify-content: center; /* Align center */
+    position: fixed; /* Stick to the bottom of the screen */
+    width: 100%;
+    height: 30px; /* Adjust height */
+    bottom: 0; /* Stick to the bottom */
+    z-index: 1000;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit content width */
+}
+
+/* About Cards */
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-card {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto;
+    box-sizing: border-box;
+}
+
+.about-card img {
+    max-width: 100%;
+    border-radius: 10px; /* Apply rounded corners to the image */
+}
+
+
+
+
+.about-card:hover {
+    transform: translateY(-5px); /* Example transform on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Example box shadow on hover */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background on hover */
+}
+
+
+.about-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #fff; /* Set font color to white */
+}
+
+.about-card p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff; /* Set font color to white */
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+/* About bars */
+.usage-bars {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.usage-bar {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    display: inline-block;
+    width: 150px; /* Adjusted width for longer names */
+    color: #fff; /* Set text color to white */
+}
+
+.bar-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+}
+
+.bar {
+    height: 20px;
+    background-color: #fff; /* Set background color to white */
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: width 0.5s ease; /* Add transition effect for width changes */
+}
+
+.python-bar {
+    background-color: #fff; /* White */
+    width: 70%; /* Adjust as per usage */
+}
+
+.html-bar {
+    background-color: #fff; /* White */
+    width: 90%; /* Adjust as per usage */
+}
+
+.css-bar {
+    background-color: #fff; /* White */
+    width: 90%; /* Adjust as per usage */
+}
+
+.singlestore-bar {
+    background-color: #fff; /* White */
+    width: 100%; /* Adjust as per usage */
+}
+
+.rstudio-bar {
+    background-color: #fff; /* White */
+    width: 100%; /* Adjust as per usage */
+}
+
+.sql-bar {
+    background-color: #fff; /* White */
+    width: 60%; /* Adjust as per usage */
+}
+
+.javascript-bar {
+    background-color: #fff; /* White */
+    width: 35%; /* Adjust as per usage */
+}
+
+.github-bar {
+    background-color: #fff; /* White */
+    width: 30%; /* Adjust as per usage */
+}
+
+.kaggle-dataset-bar {
+    background-color: #fff; /* White */
+    width: 55%; /* Adjust as per usage */
+}
