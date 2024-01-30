@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="#" onclick="scrollToSection('home')">Home</a>
+            <a href="#" onclick="scrollToSection('about')">About</a>
+            <a href="#" onclick="scrollToSection('topics')">Topics</a>
+            <a href="#" onclick="scrollToSection('creators')">Meet the Creators</a>
+        </div>
+    </nav>
+
+    <div class="top-image">
+        <img src="wine-cover.jpg" alt="Wine Cover Image">
+    </div>
+
+
+    <section id="home" class="section">
+        <div class="welcome-container">
+            <h2 class="welcome-heading">Welcome to Our Website!</h2>
+            <p>Step into a realm of endless possibilities, where ideas converge and innovation thrives. Here, amidst the digital ether, we invite you to embark on a journey of discovery and enlightenment.</p>
+            <p>Our virtual sanctuary is more than a mere collection of web pages; it's a gateway to knowledge, creativity, and community. Explore the vast expanse of information at your fingertips, each click leading you closer to unraveling the mysteries of our shared universe.</p>
+            <p>Join us as we navigate the currents of cyberspace, charting new territories and forging connections that transcend borders and boundaries. Together, let's explore, learn, and inspire.</p>
+            <p>Welcome aboard!</p>
+
+            <h3>Introduction:</h3>
+            <ul>
+                <li>Overview of UCSB DataThon</li>
+                <li>Background of the Data Science Club</li>
+                <li>Objectives and goals of the DataThon</li>
+                <li>Importance of data science and analytics in today's world</li>
+                <li>Introduction to the event format and schedule</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="creators" class="section">
+        <h2>Meet the Creators</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="angadimg.jpeg" alt="Creator 1" style="width: 250px;">
+                    </div>
+                    <div class="card-back">
+                        <h3>Creator 1</h3>
+                        <p>Data Science & Econ Major</p>
+                        <p>Angad Budwal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="jpimg.jpg" alt="Creator 2" style="width: 250px;">
+                    </div>
+                    <div class="card-back">
+                        <h3>Creator 2</h3>
+                        <p>Computer Science Major</p>
+                        <p>Jenil Prajapati</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="sanchimg.png" alt="Creator 3" style="width: 250px;">
+                    </div>
+                    <div class="card-back">
+                        <h3>Creator 3</h3>
+                        <p>Data Science Major</p>
+                        <p>Sanchit Mehrotra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="home" class="section">
+        <div class="welcome-container">
+            <div class="usage-bars">
+                <div class="usage-bar">
+                    <div class="language">Python:</div>
+                    <div class="bar python-bar"></div>
+                    <div class="usage-score">10/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">HTML:</div>
+                    <div class="bar html-bar"></div>
+                    <div class="usage-score">10/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">CSS:</div>
+                    <div class="bar css-bar"></div>
+                    <div class="usage-score">9/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">Singlestore:</div>
+                    <div class="bar singlestore-bar"></div>
+                    <div class="usage-score">10/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">RStudio:</div>
+                    <div class="bar rstudio-bar"></div>
+                    <div class="usage-score">10/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">SQL:</div>
+                    <div class="bar sql-bar"></div>
+                    <div class="usage-score">6/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">JavaScript:</div>
+                    <div class="bar javascript-bar"></div>
+                    <div class="usage-score">3.5/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">GitHub:</div>
+                    <div class="bar github-bar"></div>
+                    <div class="usage-score">3/10</div>
+                </div>
+                <div class="usage-bar">
+                    <div class="language">Kaggle Dataset:</div>
+                    <div class="bar kaggle-bar"></div>
+                    <div class="usage-score">5.5/10</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="topics" class="section">
+        <h2>Topics</h2>
+        <div class="topic-container">
+            <div class="topic">
+                <h3>1. Linear Regression:</h3>
+                <ul>
+                    <li>Introduction to linear regression</li>
+                    <li>Understanding the concept of regression analysis</li>
+                    <li>Assumptions of linear regression:
+                        <ul>
+                            <li>Linearity</li>
+                            <li>Independence</li>
+                            <li>Homoscedasticity</li>
+                            <li>Normality of residuals</li>
+                        </ul>
+                    </li>
+                    <li>Simple linear regression vs. multiple linear regression</li>
+                    <li>Interpretation of regression coefficients</li>
+                    <li>Evaluation metrics:
+                        <ul>
+                            <li>R-squared</li>
+                            <li>Mean squared error (MSE)</li>
+                            <li>Residual analysis</li>
+                        </ul>
+                    </li>
+                    <li>Techniques for model selection and validation</li>
+                </ul>
+            </div>
+            <div class="topic">
+                <h3>2. Exploratory Data Analysis (EDA):</h3>
+                <ul>
+                    <li>Understanding the structure of the wine quality dataset</li>
+                    <li>Data cleaning and preprocessing techniques</li>
+                    <li>Summary statistics and descriptive analysis</li>
+                    <li>Data visualization techniques:
+                        <ul>
+                            <li>Histograms</li>
+                            <li>Box plots</li>
+                            <li>Scatter plots</li>
+                            <li>Pair plots</li>
+                            <li>Correlation matrices</li>
+                        </ul>
+                    </li>
+                    <li>Identification of outliers and missing values</li>
+                    <li>Exploration of distributions and patterns within the dataset</li>
+                </ul>
+            </div>
+            <div class="topic">
+                <h3>3. Classification Work with Machine Learning Models:</h3>
+                <ul>
+                    <li>Introduction to machine learning classification</li>
+                    <li>Overview of classification algorithms:
+                        <ul>
+                            <li>Logistic Regression</li>
+                            <li>Decision Trees</li>
+                            <li>Random Forests</li>
+                            <li>Support Vector Machines</li>
+                        </ul>
+                    </li>
+                    <li>Data preparation and feature engineering:
+                        <ul>
+                            <li>Feature scaling</li>
+                            <li>One-hot encoding</li>
+                            <li>Feature selection</li>
+                        </ul>
+                    </li>
+                    <li>Model training, validation, and evaluation:
+                        <ul>
+                            <li>Splitting the dataset into training and testing sets</li>
+                            <li>Cross-validation techniques</li>
+                            <li>Evaluation metrics:
+                                <ul>
+                                    <li>Accuracy</li>
+                                    <li>Precision</li>
+                                    <li>Recall</li>
+                                    <li>F1-score</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Model interpretation and analysis:
+                        <ul>
+                            <li>Understanding feature importance</li>
+                            <li>Visualizing decision boundaries</li>
+                            <li>Interpreting model predictions and insights</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p>For more information, please refer to our <a href="https://docs.google.com/document/d/12GFIz9Xz4I5WdyjmsXB7JDePztgyetESRK4yIN8RstE/edit?usp=sharing" target="_blank">document</a>.</p>
+    </section>
+    
+
+    <section id="about" class="section">
+        <div class="about-content">
+            <h2>About</h2>
+            <div class="about-container">
+                <div class="about-card">
+                    <h3>Introduction</h3>
+                    <p>The first-ever UCSB DataThon is an exciting chance for participants to get a deep dive into the field of data science and is a major turning point for the Data Science Club. This project is an example of a cooperative effort to investigate, evaluate, and draw conclusions from diverse datasets, promoting an innovative and exploratory culture within the UCSB community. Participants will take part in practical exercises, seminars, and contests along the way to improve their data analysis abilities and get a greater comprehension of the nuances of real-world datasets.</p>
+                    <img src="introimg.webp" alt="Introduction Image">
+                </div>
+                <div class="about-card">
+                    <h3>About the Project</h3>
+                    <p>The examination and analysis of wine quality data, a rich and diverse dataset that presents a multitude of options for inquiry and discovery, is at the core of the DataThon. By identifying the elements that influence how wine quality is perceived and examining patterns and trends in the data, this research seeks to delve into the complexities of wine quality assessment. Through the analysis of multiple characteristics like acidity, residual sugar, pH, and alcohol concentration, attendees will acquire a deeper understanding of the intricate relationship between these elements and the overall caliber of wine.</p>
+                    <img src="projectimg.png" alt="Project Image">
+                </div>
+                <div class="about-card">
+                    <h3>Exploratory Data Analysis</h3>
+                    <p>By diving into enormous archives of wine quality data, participants will go on a voyage of exploration and discovery. Participants will find hidden patterns, trends, and insights in the dataset by using exploratory data analysis (EDA). Participants will comprehend the structure and distribution of the data more fully by visualizing and summarizing its essential features. Through the use of EDA techniques including data visualization, correlation analysis, and summary statistics, participants will be able to create hypotheses for more research and determine links between various variables.</p>
+                    <img src="edaimg.jpeg" alt="EDA Image">
+                </div>
+                <div class="about-card">
+                    <h3>Classification Work with Machine Learning Models</h3>
+                    <p>Participants will go on a model-building and predictive analytics journey by utilizing machine learning. With the aid of classification methods like support vector machines, decision trees, and logistic regression, participants will create predictive models that are specifically designed to predict wine quality based on its characteristics. Participants will optimize the performance and accuracy of their algorithms through repeated experimentation and model modification. using the assessment of model performance using metrics like accuracy, precision, recall, and F1-score, participants will get a better understanding of the advantages and disadvantages of various machine learning techniques as well as a deeper respect for the predictive modeling art and science.</p>
+                    <img src="machinelearningimg.jpeg" alt="Classification Image">
+                </div>
+            </div>  
+            <p>All things considered, the UCSB DataThon looks to be a rewarding and life-changing event that will enable participants to discover the hidden value of data and use it to spark insightful thinking and creative solutions. Participants will go on a voyage of exploration and discovery through teamwork, creativity, and curiosity, learning new things and developing new perspectives that will influence data science at UCSB and beyond in the future.</p>
+        </div>
+    </section>
+
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Datathon Winter 2024 Website. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
