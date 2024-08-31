@@ -3,6 +3,8 @@ This repo has information to the creation of the website, Website URL: https://j
 
 The Data Analysis summary is on the other GitHub Repo, Data Analysis URL: https://github.com/jenil-prajapati/ucsb_datathon
 
+DevPost: https://devpost.com/software/red-wine-quality
+
 ## Summary of Project Idea & Implementation
 
 Competing in Datathon provided me with invaluable experience in analyzing statistical models and graphs derived from predefined data sets. I honed my skills in model fitting using sophisticated algorithms and gained proficiency in classification techniques by interpreting complex data figures. 
